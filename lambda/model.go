@@ -1,8 +1,8 @@
 package main
 
 type Person struct {
-	ID       string   `json:"id"`
-	Name     string   `json:"name,omitempty"`
-	Pictures []string `json:"pictures,omitempty"`
-	Sub      string   `json:"sub"`
+	ID       string   `json:"Id"`
+	Name     string   `json:"Name,omitempty"`
+	Pictures []string `json:"Pictures,omitempty"`
+	Sub      string   `json:"Sub"`
 }
