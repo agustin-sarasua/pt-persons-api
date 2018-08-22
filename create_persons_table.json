@@ -1,0 +1,27 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "Sub",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "Id",
+            "AttributeType": "S"
+        }
+    ],
+    "TableName": "Persons",
+    "KeySchema": [
+        {
+            "AttributeName": "Sub",
+            "KeyType": "HASH"
+        },
+        {
+            "AttributeName": "Id",
+            "KeyType": "RANGE"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}
